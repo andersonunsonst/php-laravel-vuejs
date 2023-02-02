@@ -10,16 +10,16 @@
                 <div class="col-6">
 
                     <div class="my-3">
-                        <label for="nome" class="form-label">Nome: *</label>
-                        <input type="text" class="form-control" name="nome" id="nome" v-model="nome">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" name="nome" id="nome" required v-model="nome">
                     </div>
                     <div class="my-3">
-                        <label for="cpf" class="form-label">CPF: *</label>
-                        <input type="text" class="form-control" name="cpf" id="cpf" v-model="cpf">
+                        <label for="cpf" class="form-label">CPF:</label>
+                        <input type="text" class="form-control" name="cpf" id="cpf" required v-model="cpf">
                     </div>
                     <div class="my-3">
-                        <label for="email" class="form-label">E-mail: *</label>
-                        <input type="email" class="form-control" name="email" id="email" v-model="email">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" name="email" id="email" required v-model="email">
                     </div>
 
                     <div class="my-3">
@@ -31,7 +31,7 @@
                         <input type="text" class="form-control" name="cep" id="cep" v-model="cep">
                     </div>
                     <div class="my-3">
-                        <button @click="addUsuario" class="btn btn-primary">Adcionar</button>
+                        <input type="submit" value="Adcionar" @click="addUsuario" class="btn btn-primary">
                     </div>
 
                 </div>

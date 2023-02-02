@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('enderecos', function (Blueprint $table) {
             $table->id();
             $table->string('logradouro');
-            $table->string('cep',9);
+            $table->string('cep',10);
             $table->timestamps();
         });
     }

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('nome');
-            $table->string('cpf', 11);
+            $table->string('cpf', 14);
             $table->string('email');
         });
     }

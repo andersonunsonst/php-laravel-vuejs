@@ -10,7 +10,7 @@ class usuarioController extends Controller
 {
     public function listagem(Request $request)
     {
-        $user = Usuario::with('enderecos','perfil');
+        $user = Usuario::with('enderecos');
 
         if ($request->nome != "") {
             $user->where('nome', 'LIKE', '%' . $request->nome . '%');
@@ -62,7 +62,7 @@ class usuarioController extends Controller
 
     public function detalhar($id)
     {
-        $user = Usuario::with('enderecos', 'perfil')->find($id);
+        $user = Usuario::with('enderecos')->find($id);
         return response()->json($user);
     }
 
